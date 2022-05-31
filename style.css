@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lato:wght@700&display=swap');
+
+
+h1, h2, h3, h4, h5, h6, p, a, input, select, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter';
+}
+
+.calc {
+    max-width: 1280px;
+    min-width: 300px;
+    min-height: 650px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 75px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    color: #000;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 40px 0 10px 5px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#line1 {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    height: 380px;
+}
+
+#line2 {
+    position: absolute;
+    bottom: 130px;
+    left: 16px;
+    height: 200px;
+}
+
+select, input, label, a {
+    cursor: pointer;
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    width: 81%;
+    position: relative;
+}
+
+.circle {
+    background-color: #FDB819;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    z-index: 100;
+    margin-right: 8%;
+}
+
+.options {
+    width: 88%;
+    min-height: 120px;
+    border-bottom: 1px solid #EAEAEA;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+}
+
+.property {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.options-selections {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    width: 66%;
+    margin-left: 4%;
+}
+
+.options-selections select {
+    width: 100%;
+    min-width: 265px;
+    height: 40px;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 25px;
+}
+
+.city-select select{
+    width: 265px;
+}
+
+.city-checkbox div:not(:last-child) {
+    margin-right: 10.5%;
+}
+
+.house-type-checkbox div:not(:last-child) {
+    margin-right: 8%;
+}
+
+.floor-count {
+    display: flex;
+    height: 40px;
+}
+
+.floor-count button {
+    width: 40px;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.active-floor-button:hover {
+    border: 1px solid #FDB819;
+    color: #FDB819;
+}
+
+.floor-count div {
+    width: 65px;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 0 4px;
+}
+
+.elevator-checkbox div:not(:last-child) {
+    margin-right: 14%
+}
+
+.total-cost {
+    flex-direction: column;
+    border-bottom: 0;
+}
+
+.total-cost a {
+    max-width: 513px;
+    min-width: 265px;
+    min-height: 67px;
+    max-height: 90px;
+    background-color: #FDB819;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    padding: 25px;
+}
+
+.total-cost a:hover {
+    box-shadow: 5px 5px 5px 5px rgba(253, 184, 25, .3);
+    transition: .3s;
+}
+
+.total-cost a p {
+    margin-left: 12px;
+}
+
+.total-cost-options {
+    color: #A9A9A9;
+    margin: 0 0 30px 5px;
+}
+
+.display-none {
+    display: none;
+}
+
+
+.form-check-inline .form-check-input {
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+
+.form-check-inline .form-check-input:hover {
+    border: 1px solid #FDB819;
+    transition: .3s;
+}
+
+.form-check-inline .form-check-input:checked {
+    background-color: #fff;
+    border: 1px solid #FDB819;
+    background-image: url(images/checkbox-vector.png);
+    background-size: 12px;
+}
+
+.form-check-inline .form-check-label {
+    color: #A9A9A9;
+}
+
+.form-check-inline .form-check-input:checked + label {
+    color: #000;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .circle, #line1, #line2 {
+        display: none;
+    }
+
+    .options {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .options, .options-selections select, h2, h3, .total-cost {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .form-section {
+        width: 90%;
+    }
+
+    .options {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        min-height: 170px;
+        border-bottom: 0;
+    }
+
+    .property {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .options-selections {
+        margin: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .options-selections select {
+        padding-left: 15px;
+    }
+
+    .city-select, .elevator-checkbox {
+        position: relative;
+        bottom: 60px;
+    }
+
+    .calc .form-section:nth-child(2) {
+        background-color: #F6F6F6;
+        height: 330px;
+    }
+
+
+    .form-check-inline {
+        display: flex;
+        width: 100%;
+    }
+
+    .calc .form-section:nth-child(4) {
+        background-color: #F6F6F6;
+        height: 300px;
+    }
+
+    .property h3:nth-child(2) {
+        position: relative;
+        top: 85px;
+    }
+
+    .total-cost {
+        text-align: center;
+    }
+
+    .total-cost a img {
+        display: none;
+    }
+}
